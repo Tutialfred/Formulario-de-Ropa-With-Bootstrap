@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content= "IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">MGT</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="#">Registrarse</a>
+            <a class="nav-link" href="#">lanzamientos</a>
+            <a class="nav-link" href="#">Nosotros</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CONTAINER -->
+
+    <div class="container my-3">
+      <div class="row">
+        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 py-4 blanko">
+          <h2>Formulario de ropas</h2>
+          <form>
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Prenda</label>
+              <input
+                type="text"
+                class="form-control"
+                id="nombre"
+                placeholder="Prenda"
+                autofocus
+              />
+            
+            </div>
+            <div class="mb-3">
+              <label for="Descripcion" class="form-label">Descripción</label>
+              <textarea
+                class="form-control"
+                id="Descripcion"
+                rows="2"
+                placeholder="Descripción del producto"
+              ></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="disponibles" class="form-label">Cantidades</label>
+              <input
+                type="number"
+                class="form-control"
+                id="disponibles"
+                placeholder="Elige la cantidad"
+              />
+
+            <label for="talla">Talle</label>
+              <select name="" id="talla" class="my-2">
+                <option value=""></option>
+                <option value="">S</option>
+                <option value="">M</option>
+                <option value="">L</option>
+                <option value="">XL</option>
+                <option value="">XXL</option>
+                <option value="">SinTalla</option>
+              </select>
+            </div>
+
+            <div class="d-grid gap-2">
+              <button type="button" class="btn btn-success">Guardar</button>
+              <button type="button" class="btn btn-primary">Buscar</button>
+              <button type="button" class="btn btn-danger">Limpiar</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- TABLA -->
+
+        <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8 py-4 blanko" >
+          <h1 id="lista">Listado de productos</h1>
+          <table class="table table-striped table-dark centrado">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Modelos</th>
+                <th>Cantidad de productos</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Remeras</td>
+                <td>15 Disponibles</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Pantalones</td>
+                <td>10 disponibles</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Medias</td>
+                <td>25 disponibles</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Buzos</td>
+                <td>7 Disponibles</td>
+              </tr>
+            </tbody>
+          </table>  
+        </div>
+          <div class="text-end m-2">
+            <a href="Productos.html" class="fs-3 text-dark fw-semibold">Comprar productos</a>
+          </div>
+      </div>
+    </div>
+
+    <script src="JS/bootstrap.min.js"></script>
+  </body>
+</html>
