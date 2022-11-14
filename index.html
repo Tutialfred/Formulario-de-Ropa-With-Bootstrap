@@ -1,140 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content= "IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos de calidad ✅</title>
+    <link rel="icon" href="Images/logo.jpg">
+
     <!-- BOOTSTRAP -->
-    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="CSS/style.css" />
-  </head>
-  <body>
-    <!-- NAV -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">MGT</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <!-- <script src="JS/bootstrap.min.js"></script> -->
+    <!-- POR MOMENTO NO TOCAR ESTE ARCHIVO, ↑ QUE SEA UN EXPORT DEL BUNDLER, si es necesario -->
+    
+    <link rel="stylesheet" href="CSS/productos.css">
+</head>
+
+<body >
+ 
+    <!-- HEADER  -->
+    <header class="bg-primary text-white container-fluid d-flex justify-content-center">
+        <p class="mb-0 p-2 fs-4">Contacto +54 9 261 2524 171</p>
+    </header>
+
+    <!-- NAVBAR (BARRA DE NAVEGACION) -->
+   
+    <nav class="navbar navbar-expand-lg bg-light p-2" id="menu">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <span class="fs-4 fw-bold text-decoration-underline">Fred zuti</span> 
+        </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link"  href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Equipo</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Conoce +
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Productos</a></li>
+                  <li><a class="dropdown-item" href="#">Estilos</a></li>
+                  <li><a class="dropdown-item" href="#">Casas</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Novedades</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">VIP account</a>
+              </li>
+            </ul>
+
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="email" placeholder="Your email" aria-label="email">
+              <button class="btn btn-primary btn-primary-outline-success" type="button">Subscribite</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- SLIDER DE IMAGENES -->
+
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          
+          <div class="carousel-item active" data-bs-interval="99999999">
+            <img src="Images/oficina.jpg" class="d-block w-100" alt="img1">
+          </div>
+
+          <div class="carousel-item" data-bs-interval="999999">
+            <img src="Images/modelo.jpg" class="d-block w-100" alt="img2">
+          </div>
+
+          <div class="carousel-item" data-bs-interval="999999">
+            <img src="Images/lv.jpg" class="d-block w-100" alt="img3">
+          </div>
+
+        </div>
+        
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <div class="navbar-nav ms-auto">
-            <a class="nav-link" href="#">Home</a>
-            <a class="nav-link" href="#">Registrarse</a>
-            <a class="nav-link" href="#">lanzamientos</a>
-            <a class="nav-link" href="#">Nosotros</a>
-          </div>
-        </div>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-    </nav>
 
-    <!-- CONTAINER -->
+      <!-- INTRO -->
 
-    <div class="container my-3">
-      <div class="row">
-        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 py-4 blanko">
-          <h2>Formulario de ropas</h2>
-          <form>
-            <div class="mb-3">
-              <label for="nombre" class="form-label">Prenda</label>
-              <input
-                type="text"
-                class="form-control"
-                id="nombre"
-                placeholder="Prenda"
-                autofocus
-              />
+      <section class="w-50 mx-auto text-center pt-4" id="intro">
+        <h1 class="p-3 fs-1 border-top border-3 ">Bienvenido a todos nuestros productos
+          <br><span class="text-primary serLibre"> ERES LIBRE</span>
+        </h1>
+        <p class="p-3 fs-4"><span class="text-primary">VERANO 2023 </span> Pequeña introducción a nuestro catalogo</p>
+      </section>
+
+      <!-- SERVICIOS -- MODELOS DE ROPA (PRODUCTOS)-->
+
+      <section class="container-fluid">
+        <div class="row w-75 mx-auto servicio-fila">
+
+          <div class="col-lg-6 col-md-12 col-sm-12
+          d-flex my-5 icono-wrap">
+              <img src="Images/t-shirt Black.png"IMG" width="180" height="160">
+            <div>
+              <h3 class="fs-5 mt-4 px-4 pb-1">Wolf black</h3>
+              <p class="px-4">Modelo clasico para el entrenamiento, ya sea solo o como lider en tu equipo. 
+                Saca todo el potencial con la comodidad y la facha de la sencillez
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-12 col-sm-12
+          d-flex my-5 icono-wrap">
+              <img src="Images/PANTALON2.jpg" alt="IMG" width="180" height="160">
+            <div>
+              <h3 class="fs-5 mt-4 px-4 pb-1">Pants White Snow</h3>
+              <p class="px-4">Un producto pensado para la claridad donde tu objetivo solo es correr 
+                transmitiendo energia e inspirar a quien te vea. Remarcando el espiritu</p>
+            </div>
+          </div>
+
+             <!-- SECOND BLOCK -->
+
+          <div class="col-lg-6 col-md-12 col-sm-12
+          d-flex my-5 icono-wrap">
+              <img src="Images/ADIDAS PANTS.PNG" alt="IMG" width="180" height="160">
+            <div>
+              <h3 class="fs-5 mt-4 px-4 pb-1">Adidas & MGT</h3>
+              <p class="px-4">La gran union de dos potencia hacen un producto increible. donde nadie lo hubiera imaginado
+                donde la sencillez, la elengancia y la calidad pueden sentirse a centimetros de ponerte el pantalon
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-12 col-sm-12
+          d-flex my-5 icono-wrap">
+              <img src="Images/ADIDAS.PNG" alt="IMG" width="180" height="160">
+            <div>
+              <h3 class="fs-5 mt-4 px-4 pb-1">Adidas</h3>
+              <p class="px-4">Mano a mano, acompañamos y ayudamos a nuestros socios la posibilidad de que te encuentres
+                con los mejores productos como nosotros confiamos y conocemos sus productos, tambien queremos que lleguen a tus manos
+
+              </p>
+            </div>
+          </div>
+        <div>                   
+      </section>
+
+          <!-- ACERCA DE NOSOSTROS -->
+
+          <section>
+            <div id="equipo" class="w-75 m-auto text-center">
+              <h1 class="mb-5 fs-2">Equipo de emprendedores con una <br>
+                <span class="text-primary">Gran vision en las personas y del mañana</span>
+              </h1>
+              <p class="fs-4">Somos un pequeño grupo o cohorte de personas en cual necesitamos y queremos brindar y poder ayudar
+                a la mayor cantidad de personas en poder lograr la sastifaccion de poder vestir bien y con calidad a su 
+                gusto y necesidad, Estamos para poder acompañarte en tu camino del exito
+              </p>
+            </div >
+
+            <div class="mt-5 text-center">
+              <img class="img-fluid" src="Images/equipo3.png" alt="equipo" width="70%" height="70%">
+            </div>
+
+            <div id="local" class="border-top border-3 mt-4">
+              <div class="mapa"></div>
+              <div>
+                <div class="wrapper">
+                  <h2>Ubicado en Mendoza, Argentina</h2>
+                  <h2 class="text-primary mb-4" id="typewriter"></h2>
+                  <p class="fs-5 text-body">Decidimos empezar por donde todo comenzo, nuestras inspiraciones siempre fue donde nos criamos</p>
+
+                  <section class="d-flex" id="numeros-local">
+                    <!-- . -->
+                    <div>
+                      <p class="text-primary fs-5">248</p>
+                      <p>dias de sol</p>
+                    </div>
+                    <!-- . -->
+                    <div>
+                      <p class="text-primary fs-5">100%</p>
+                      <p>Aprobado</p>
+                    </div>
+                    <!-- . -->
+                    <div>
+                      <p class="text-primary fs-5">22'C </p>
+                      <p>Temperatura</p>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- FORMULARIO  BG-->
+
+          <section id="seccion-contacto" class="border-bottom border-secondary border-4">
+            <div id="bg-contacto">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1b2a4e" fill-opacity="1" d="M0,32L0,160L36.9,160L36.9,160L73.8,160L73.8,192L110.8,192L110.8,64L147.7,64L147.7,224L184.6,224L184.6,128L221.5,128L221.5,160L258.5,160L258.5,160L295.4,160L295.4,32L332.3,32L332.3,96L369.2,96L369.2,32L406.2,32L406.2,160L443.1,160L443.1,32L480,32L480,288L516.9,288L516.9,320L553.8,320L553.8,0L590.8,0L590.8,224L627.7,224L627.7,256L664.6,256L664.6,64L701.5,64L701.5,256L738.5,256L738.5,160L775.4,160L775.4,64L812.3,64L812.3,160L849.2,160L849.2,160L886.2,160L886.2,64L923.1,64L923.1,0L960,0L960,320L996.9,320L996.9,192L1033.8,192L1033.8,96L1070.8,96L1070.8,32L1107.7,32L1107.7,224L1144.6,224L1144.6,256L1181.5,256L1181.5,256L1218.5,256L1218.5,64L1255.4,64L1255.4,320L1292.3,320L1292.3,32L1329.2,32L1329.2,64L1366.2,64L1366.2,64L1403.1,64L1403.1,320L1440,320L1440,320L1403.1,320L1403.1,320L1366.2,320L1366.2,320L1329.2,320L1329.2,320L1292.3,320L1292.3,320L1255.4,320L1255.4,320L1218.5,320L1218.5,320L1181.5,320L1181.5,320L1144.6,320L1144.6,320L1107.7,320L1107.7,320L1070.8,320L1070.8,320L1033.8,320L1033.8,320L996.9,320L996.9,320L960,320L960,320L923.1,320L923.1,320L886.2,320L886.2,320L849.2,320L849.2,320L812.3,320L812.3,320L775.4,320L775.4,320L738.5,320L738.5,320L701.5,320L701.5,320L664.6,320L664.6,320L627.7,320L627.7,320L590.8,320L590.8,320L553.8,320L553.8,320L516.9,320L516.9,320L480,320L480,320L443.1,320L443.1,320L406.2,320L406.2,320L369.2,320L369.2,320L332.3,320L332.3,320L295.4,320L295.4,320L258.5,320L258.5,320L221.5,320L221.5,320L184.6,320L184.6,320L147.7,320L147.7,320L110.8,320L110.8,320L73.8,320L73.8,320L36.9,320L36.9,320L0,320L0,320Z"></path></svg>
+            <div>
+
+            <!-- FORMULARIO INPUTS -->
+            <div class="container" id="contenedor-formulario">
+              <div id="titulo-formulario" class="text-center mb-4">
+                <div><img src="Images/support.png" alt="contacto" class="img-fluid"></div>
+                <h2>Contactos</h2>
+                <p class="fs-5">Estamos aqui para hacer realidad tus proyectos</p>
+              </div>
+
+              <form action="">
+                <div class="mb-3">
+                  <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                </div>
+
+                <div class="mb-3">
+                  <input type="text" class="form-control" id="nombre" placeholder="Your name" required>
+                </div>
+
+                <div class="mb-3">
+                  <input type="tel" class="form-control" id="tel" placeholder="+54 261000150" required>
+                </div>
+
+                <div class="mb-3">
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Write your message here"></textarea>
+                </div>
+
+                <div class="mb-3">
+                  <button type="button" class="btn btn-primary w-100 fs-5">Send message</button>
+                </div>
+                
+              </form> 
+
+            </div>
+            </section>
+
+            <!-- PIE DE LA PAGINA --- FOOTER 🎫 -->
             
-            </div>
-            <div class="mb-3">
-              <label for="Descripcion" class="form-label">Descripción</label>
-              <textarea
-                class="form-control"
-                id="Descripcion"
-                rows="2"
-                placeholder="Descripción del producto"
-              ></textarea>
-            </div>
-            <div class="mb-3">
-              <label for="disponibles" class="form-label">Cantidades</label>
-              <input
-                type="number"
-                class="form-control"
-                id="disponibles"
-                placeholder="Elige la cantidad"
-              />
+            <footer class="w-100 d-flex align-item-center justify-content-center flex-wrap">
+              <p class="fs-5 px-3 pt-3"> Todos los derechos &copy; reservado por "Fred Zuti" AND "The coffee gang" ✅</p>
+              <div id="iconos">
+                <a href="https://www.twitter.com/tutialfred" target="_blank_"><i class="bi bi-twitter text-info"></i></a>
+                <a href="https://www.facebook.com" target="_blank_"><i class="bi bi-facebook text-primary"></i></a>
+                <a href="https://www.instagram.com" target="_blank_"><i class="bi bi-instagram text-black"></i></a>
+                <a href="https://www.youtube.com/channel/UC_amn4L722sLDr2f1RLvGQQ" target="_blank_"><i class="bi bi-youtube text-danger"></i></a>
+              </div>
+            </footer>
 
-            <label for="talla">Talle</label>
-              <select name="" id="talla" class="my-2">
-                <option value=""></option>
-                <option value="">S</option>
-                <option value="">M</option>
-                <option value="">L</option>
-                <option value="">XL</option>
-                <option value="">XXL</option>
-                <option value="">SinTalla</option>
-              </select>
-            </div>
 
-            <div class="d-grid gap-2">
-              <button type="button" class="btn btn-success">Guardar</button>
-              <button type="button" class="btn btn-primary">Buscar</button>
-              <button type="button" class="btn btn-danger">Limpiar</button>
-            </div>
-          </form>
-        </div>
 
-        <!-- TABLA -->
 
-        <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8 py-4 blanko" >
-          <h1 id="lista">Listado de productos</h1>
-          <table class="table table-striped table-dark centrado">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Modelos</th>
-                <th>Cantidad de productos</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>Remeras</td>
-                <td>15 Disponibles</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Pantalones</td>
-                <td>10 disponibles</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>Medias</td>
-                <td>25 disponibles</td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td>Buzos</td>
-                <td>7 Disponibles</td>
-              </tr>
-            </tbody>
-          </table>  
-        </div>
-          <div class="text-end m-2">
-            <a href="Productos.html" class="fs-3 text-dark fw-semibold">Comprar productos</a>
-          </div>
-      </div>
-    </div>
+     
+          <a href="index.html" class="fs-6 text-dark text-uppercase text-decoration-underline d-flex justify-content-end me-3 my-2" >
+            Agregar productos a tu lista</a> 
 
-    <script src="JS/bootstrap.min.js"></script>
+          <script src="JS/bootstrap.bundle.min.js"></script>
   </body>
 </html>
