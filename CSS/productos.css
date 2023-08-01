@@ -82,7 +82,7 @@ body {
     
 /* Seccion equipo MENDOZA */
 
-#numeros-local div{
+numeros-local div{
     padding: 0 20px 0 0;
     height: 48px;
 }
@@ -103,19 +103,22 @@ body {
 }
 #seccion-contacto {
     background-color: #1b2a4e;
-    min-height: 450px;
+    min-height: 530px;
     position: relative;
 }
 #contenedor-formulario{
     position: absolute;
-    top: 60%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fbfafa;
     border-radius: 10px;
     max-width: 500px;
-    border: 1px solid black;
+    border: 3px solid black;
+    padding: 30px !important;
+
 }
+
 #titulo-formulario{
     color: rgb(51, 50, 50);
     user-select: none;
@@ -144,4 +147,21 @@ footer p {
 }
 .aas{
     background-color: rgb(28, 126, 212);
+}
+.aa{
+    background-color: rgb(239, 239, 239);
+    margin: 0 14px;
+    border-radius: 12px;
+    outline: 2px solid black;
+    height: 40px;
+    width: 110px;
+    text-align: center;
+    /* font-weight: 100 !important; */
+}
+.aa:hover{
+    background-color: rgb(28, 126, 212);
+    margin: 0 14px;
+    border-radius: 12px;
+    outline: 2px solid black;
+    transition: .8s;
 }
