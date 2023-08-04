@@ -26,7 +26,7 @@
 
 
 <body >
- 
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 
     <!-- HEADER  -->
@@ -53,7 +53,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
               <li class="nav-item aa">
-                <a class="nav-link"  href="home.html">Home</a>  
+                <a class="nav-link"  href="#">Home</a>  
       
               </li>
               <li class="nav-item aa">
@@ -80,9 +80,12 @@
             </ul>
 
             <form class="d-flex" role="search">
-              <input  class="form-control me-2" type="email" placeholder="Your email" aria-label="email">
-              <button class="btn btn-primary btn-primary-outline-success" type="button">Subscribite</button>
+              <input class="form-control me-2" type="text" placeholder="Your email" aria-label="email" required>
+              <button class="btn btn-primary btn-primary-outline-success" type="submit">Subscribite</button>
             </form>
+            
+            
+            
           </div>
         </div>
       </nav>
@@ -211,7 +214,7 @@
                       </div>
           <!-- TUTI ZAVALA-->
                       <figure class="testimony__picture">
-                          <img src="Images/face.jpg" class="testimony__img">
+                          <img src="Images/tuti.png" class="testimony__img">
                       </figure>
                   </section>
           <!--LEONEL-->
@@ -226,36 +229,11 @@
                       </div>
           
                       <figure class="testimony__picture">
-                          <img src="Images/face.jpg" class="testimony__img">
+                          <img src="Images/leonel.jfif" class="testimony__img">
                       </figure>
                   </section>
           
-                  <section class="testimony__body" data-id="3">
-                      <div class="testimony__texts">
-                          <h2 class="subtitle">Mi nombre es Karen Arteaga, <span class="testimony__course">estudiante de
-                                  CSS.</span></h2>
-                          <p class="testimony__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est
-                              esse, niam laboriosam saepe reiciendis dolorem. Cum, ratione voluptatum!</p>
-                      </div>
-          
-                      <figure class="testimony__picture">
-                          <img src="Images/face2.jpg" class="testimony__img">
-                      </figure>
-                  </section>
-          
-                  <section class="testimony__body" data-id="4">
-                      <div class="testimony__texts">
-                          <h2 class="subtitle">Mi nombre es Kevin Ramirez, <span class="testimony__course">estudiante de
-                                  CSS.</span></h2>
-                          <p class="testimony__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est
-                              esse, niam laboriosam saepe reiciendis dolorem. Cum, ratione voluptatum!</p>
-                      </div>
-          
-                      <figure class="testimony__picture">
-                          <img src="Images/face3.jpg" class="testimony__img">
-                      </figure>
-                  </section>
-          
+                
           
                   <img src="Images/slider/rightarrow.svg" class="testimony__arrow" id="next">
               </div>
@@ -315,8 +293,6 @@
                   <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
                 </div>
               
-
-
                 <div class="mb-3">
                   <input type="text" class="form-control" id="nombre" placeholder="Your name" required>
                 </div>
@@ -330,9 +306,10 @@
                 </div>
               
                 <div class="mb-3">
-                  <button type="button" class="btn btn-primary w-100 fs-5">Send message</button>
+                  <button type="submit" class="btn btn-primary w-100 fs-5" id="sendss">Send message</button>
                 </div>
               </form>
+              
               
 
             </div>
@@ -354,8 +331,8 @@
 
 
      
-          <a href="formulario.html" class="fs-6 text-dark text-uppercase text-decoration-underline d-flex justify-content-end me-3 my-2" >
-            Agregar productos a tu lista</a> 
+          <!-- <a href="formulario.html" class="fs-6 text-dark text-uppercase text-decoration-underline d-flex justify-content-end me-3 my-2" >
+            Agregar productos a tu lista</a>  -->
 
           <script src="JS/bootstrap.bundle.min.js"></script>
           <script src="JS/slider.js"></script>
